@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createHashRouter, RouterProvider } from 'react-router'
 import Start from './pages/Start.jsx'
 import Products from './pages/Products.jsx'
+import Details from './pages/Details.jsx'
 
 const router = createHashRouter([
 	{
@@ -18,6 +19,10 @@ const router = createHashRouter([
 			{
 				path: "/products",
 				Component: Products
+			},
+			{
+				path: "/details/:toyId",
+				Component: Details
 			}
 			// /
 			// /products

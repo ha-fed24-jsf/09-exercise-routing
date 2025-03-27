@@ -1,12 +1,22 @@
-import { Link } from "react-router"
+import { Link, useParams } from "react-router"
+import { toys } from '../data/toys.js'
+import './Products.css'
 
-const Products = () => (
-	<div className="start">
-		<h2> Produkter </h2>
-		<section>
-			Lista med produkter kommer här...
-		</section>
-	</div>
-)
+const Products = () => {
+
+	return (
+		<div className="products">
+			<h2> Produkter </h2>
+			<div className="card-grid">
+				{toys.map(toy => (
+					<section key={toy.id} className="toy-card">
+						<h3> {toy.name} </h3>
+						<p> {toy.description} </p>
+					</section>
+				))}
+			</div>
+		</div>
+	)
+}
 
 export default Products

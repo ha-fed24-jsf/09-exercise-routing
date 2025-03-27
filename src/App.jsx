@@ -9,7 +9,7 @@ function App() {
 				<nav>
 					<NavLink to="/"> Start </NavLink>
 					<NavLink to="/products"> Produkter </NavLink>
-					<NavLink to="/details"> Detaljer (ta bort senare) </NavLink>
+					{/* <NavLink to="/details"> Detaljer (ta bort senare) </NavLink> */}
 				</nav>
 			</header>
 			<main>
