@@ -1,0 +1,26 @@
+header, main {
+	padding: 0.2em 1em;
+}
+header {
+	background-color: rgb(12, 116, 66);
+
+	nav {
+		display: flex;
+		gap: 1em;
+
+		> a {
+			color: rgb(111, 213, 111);
+			font-weight: bold;
+
+			&.active {
+				text-decoration: none;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+main {
+	background-color: rgb(120, 226, 214);
+}
