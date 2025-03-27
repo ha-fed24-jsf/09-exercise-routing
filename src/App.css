@@ -1,3 +1,9 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 header, main {
 	padding: 0.2em 1em;
 }
@@ -23,4 +29,5 @@ header {
 }
 main {
 	background-color: rgb(120, 226, 214);
+	flex-grow: 1;
 }

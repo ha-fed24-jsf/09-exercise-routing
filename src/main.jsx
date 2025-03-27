@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createHashRouter, RouterProvider } from 'react-router'
 import Start from './pages/Start.jsx'
+import Products from './pages/Products.jsx'
 
 const router = createHashRouter([
 	{
@@ -13,6 +14,10 @@ const router = createHashRouter([
 			{
 				index: true,
 				Component: Start
+			},
+			{
+				path: "/products",
+				Component: Products
 			}
 			// /
 			// /products
